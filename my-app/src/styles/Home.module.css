@@ -1,0 +1,25 @@
+.background {
+  background-color: #021b29;
+  width: 100%;
+  height: 100%;
+  background-image: url('/FundoHarry.jpg');
+  background-size: cover;
+  height: 100vh;
+}
+
+.box button {
+  width: 210px;
+  height: 59px;
+  border-radius: 10px;
+  border: 1px;
+  /* color: #A6955A; */
+  background-color: #A6955A;
+}
+
+.cards {
+  padding: 20px;
+}
+
+.cards img {
+  padding: 20px;
+}
