@@ -11,5 +11,5 @@
     background-size: cover;
     background-position: center;
     justify-content: flex-end;
-
+    display: flex;
 }
