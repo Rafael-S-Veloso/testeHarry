@@ -1,0 +1,15 @@
+.cabecalho {
+    background-color: #A6955A;
+    width: 1280px;
+    height: 103px;
+}
+
+.background {
+    background-image: url('/fundoAzul.png');
+    width: 100%;
+    position: center;
+    background-size: cover;
+    background-position: center;
+    justify-content: flex-end;
+
+}
