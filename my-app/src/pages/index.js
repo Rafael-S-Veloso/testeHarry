@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
 import styles from "../styles/Home.module.css";
-import Cards from "@/components/Cards/Cards";
+import CardsHouse from "@/components/CardsHouse/CardsHouse";
 import Image from "next/image";
 import Logo from "../../public/logo2.png";
 import LogoMeio from "../../public/LogoMeio.png";
@@ -34,7 +34,7 @@ export default function Home() {
           <div className={styles.border} />
         </div>
         <div className={styles.cards}>
-          <Cards />
+          <CardsHouse />
         </div>
       </main>
     </div>

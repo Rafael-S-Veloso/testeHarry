@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function Cards() {
+export default function CardsHouse() {
   return (
     <>
       <Image src="/grifinoria.jpg" alt="Grifinória" width={272} height={288} />

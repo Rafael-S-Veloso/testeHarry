@@ -9,14 +9,11 @@
 
 .background {
     background-image: url('../../public/fundoAzul.png');
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
 }
 
 .border {
-    border: 3px solid #A6955A;
-    width: 900px;
+    border: 1px solid #A6955A;
+    width: 800px;
 }
 
 .container {
@@ -25,11 +22,23 @@
     align-items: center;
     justify-content: space-between;
     margin-top: 10px;
-    color: #A6955A;
+    color: #a6955a;
     font-size: 24px;
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
 }
 
 .logo {
     width: 203px;
     height: 72px;
+}
+
+.containerModal {
+    display: flex;
 }

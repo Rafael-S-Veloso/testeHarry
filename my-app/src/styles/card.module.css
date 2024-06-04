@@ -1,0 +1,19 @@
+.Card {
+    width: 163px;
+    height: 227px;
+    border: 2px solid #a6955a;
+    display: flex;
+    margin: 0 10px;
+
+}
+
+.Card img {
+    width: 100%;
+    height: auto;
+
+}
+
+.title {
+    text-align: center;
+    color: #a6955a;
+}
