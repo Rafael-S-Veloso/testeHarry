@@ -89,35 +89,61 @@ function Characters({ characters }) {
           <div className={styles.containerModal}>
             <div>
               <Image
-                src={selectedCharacter.image}
-                alt={selectedCharacter.name}
+                src={selectedCharacter.image || DefaultHarry}
+                alt={selectedCharacter.name || "Default Image"}
                 width={256}
                 height={356}
               />
             </div>
             <div className={styles.info}>
-              <h2>{selectedCharacter.name || "Nao encontrado"}</h2>
-
-              <p>House: {selectedCharacter.house || "Nao encontrado"}</p>
-              <p>Species: {selectedCharacter.species || "Nao encontrado"}</p>
-              <p>Gender: {selectedCharacter.gender || "Nao encontrado"}</p>
               <p>
-                Birthdate: {selectedCharacter.dateOfBirth || "Nao encontrado"}
-              </p>
-              <p>Ancestry: {selectedCharacter.ancestry || "Nao encontrado"}</p>
-              <p>
-                Eye Colour: {selectedCharacter.eyeColour || "Nao encontrado"}
+                Nome:
+                <span>{selectedCharacter.name || "Nao encontrado"}</span>
               </p>
               <p>
-                Hair Colour: {selectedCharacter.hairColour || "Nao encontrado"}
+                Casa:
+                <span>{selectedCharacter.house || "Nao encontrado"}</span>
               </p>
               <p>
-                Wand: {selectedCharacter.wand.wood || "Nao encontrado"},{" "}
-                {selectedCharacter.wand.core || "Nao encontrado"},{" "}
-                {selectedCharacter.wand.length} inches
+                Espécie:
+                <span> {selectedCharacter.species || "Nao encontrado"}</span>
               </p>
-              <p>Patronus: {selectedCharacter.patronus || "Nao encontrado"}</p>
-              <p>Actor: {selectedCharacter.actor || "Nao encontrado"}</p>
+              <p>
+                Gênero:
+                <span> {selectedCharacter.gender || "Nao encontrado"}</span>
+              </p>
+              <p>
+                Data de Nasc.:
+                <span>{selectedCharacter.dateOfBirth || "Nao encontrado"}</span>
+              </p>
+              <p>
+                Ancestralidade:
+                <span> {selectedCharacter.ancestry || "Nao encontrado"}</span>
+              </p>
+              <p>
+                Eye Colour:
+                <span> {selectedCharacter.eyeColour || "Nao encontrado"}</span>
+              </p>
+              <p>
+                Hair Colour:
+                <span>{selectedCharacter.hairColour || "Nao encontrado"}</span>
+              </p>
+              <p>
+                Varinha:
+                <span>
+                  {selectedCharacter.wand.wood || "Nao encontrado"},
+                  {selectedCharacter.wand.core || "Nao encontrado"},
+                  {selectedCharacter.wand.length} inches
+                </span>
+              </p>
+              <p>
+                Patronus:
+                <span>{selectedCharacter.patronus || "Nao encontrado"}</span>
+              </p>
+              <p>
+                Ator:
+                <span>{selectedCharacter.actor || "Nao encontrado"}</span>
+              </p>
             </div>
           </div>
         </Modal>

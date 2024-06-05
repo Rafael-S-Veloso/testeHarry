@@ -28,6 +28,7 @@ export default function Home() {
       <header className={styles.cabecalho} />
       <main className={styles.container}>
         <LogoSection handleButtonClick={handleButtonClick} />
+
         <div className={styles.main}>
           <Image src={LogoMeio} alt="Logo meio" />
           <p>Navegue pelas Casas</p>
