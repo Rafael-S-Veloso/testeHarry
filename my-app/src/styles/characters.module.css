@@ -12,8 +12,8 @@
 }
 
 .border {
-    border: 1px solid #A6955A;
-    width: 800px;
+    border: 3px solid #A6955A;
+    width: 900px;
 }
 
 .container {
@@ -23,7 +23,7 @@
     justify-content: space-between;
     margin-top: 10px;
     color: #a6955a;
-    font-size: 24px;
+    font-size: 30px;
 }
 
 .card {
@@ -54,15 +54,18 @@
     flex-direction: column;
     font-size: 18px;
     margin-left: 40px;
+    line-height: 30px;
 
 }
 
 .info p {
     color: #A6955A;
+    font-size: 18px;
 }
 
 .info span {
     color: #ffffff;
+    font-size: 18px;
 }
 
 .containerModal img {
