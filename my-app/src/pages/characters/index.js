@@ -109,12 +109,17 @@ function Characters({ characters }) {
                 <span> {selectedCharacter.species || "Nao encontrado"}</span>
               </p>
               <p>
+                Data de Nasc.:
+                <span>{selectedCharacter.dateOfBirth || "Nao encontrado"}</span>
+              </p>
+
+              <p>
                 Gênero:
                 <span> {selectedCharacter.gender || "Nao encontrado"}</span>
               </p>
               <p>
-                Data de Nasc.:
-                <span>{selectedCharacter.dateOfBirth || "Nao encontrado"}</span>
+                Patronus:
+                <span>{selectedCharacter.patronus || "Nao encontrado"}</span>
               </p>
               <p>
                 Ancestralidade:
@@ -136,10 +141,7 @@ function Characters({ characters }) {
                   {selectedCharacter.wand.length} inches
                 </span>
               </p>
-              <p>
-                Patronus:
-                <span>{selectedCharacter.patronus || "Nao encontrado"}</span>
-              </p>
+
               <p>
                 Ator:
                 <span>{selectedCharacter.actor || "Nao encontrado"}</span>
