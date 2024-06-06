@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import logoHarry from "../../../public/logoHarry.png";
+import defaultHarry from "../../../public/logoDefaultHarry.jpg";
 import styles from "../../styles/characters.module.css";
 import LogoMeio from "../../../public/LogoMeio.png";
 import Card from "./cards";
@@ -49,6 +50,7 @@ function Characters({ characters }) {
     setIsModalVisible(false);
     setSelectedCharacter(null);
   };
+
   const translateHouseName = () => {
     switch (house) {
       case "Gryffindor":
@@ -63,6 +65,7 @@ function Characters({ characters }) {
         return "Personagens";
     }
   };
+
   return (
     <div className={styles.background}>
       <header className={styles.cabecalho}>
@@ -89,7 +92,7 @@ function Characters({ characters }) {
           <div className={styles.containerModal}>
             <div>
               <Image
-                src={selectedCharacter.image || DefaultHarry}
+                src={selectedCharacter.image || defaultHarry}
                 alt={selectedCharacter.name || "Default Image"}
                 width={256}
                 height={356}
@@ -98,11 +101,11 @@ function Characters({ characters }) {
             <div className={styles.info}>
               <p>
                 Nome:
-                <span>{selectedCharacter.name || "Nao encontrado"}</span>
+                <span> {selectedCharacter.name || "Nao encontrado"}</span>
               </p>
               <p>
                 Casa:
-                <span>{selectedCharacter.house || "Nao encontrado"}</span>
+                <span> {selectedCharacter.house || "Nao encontrado"}</span>
               </p>
               <p>
                 Espécie:
@@ -110,7 +113,10 @@ function Characters({ characters }) {
               </p>
               <p>
                 Data de Nasc.:
-                <span>{selectedCharacter.dateOfBirth || "Nao encontrado"}</span>
+                <span>
+                  {" "}
+                  {selectedCharacter.dateOfBirth || "Nao encontrado"}
+                </span>
               </p>
 
               <p>
@@ -119,32 +125,39 @@ function Characters({ characters }) {
               </p>
               <p>
                 Patronus:
-                <span>{selectedCharacter.patronus || "Nao encontrado"}</span>
+                <span> {selectedCharacter.patronus || "Nao encontrado"}</span>
+              </p>
+
+              <p>
+                Varinha:
+                <span>
+                  <p>
+                    -Madeira:
+                    <span>
+                      {" "}
+                      {selectedCharacter.wand.wood || "Nao encontrado"},
+                    </span>
+                  </p>
+                  <p>
+                    -Núcleo:
+                    <span>
+                      {" "}
+                      {selectedCharacter.wand.core || "Nao encontrado"},
+                    </span>
+                  </p>
+                  <p>
+                    -Comprimento:
+                    <span> {selectedCharacter.wand.length} inches </span>
+                  </p>
+                </span>
               </p>
               <p>
                 Ancestralidade:
                 <span> {selectedCharacter.ancestry || "Nao encontrado"}</span>
               </p>
               <p>
-                Eye Colour:
-                <span> {selectedCharacter.eyeColour || "Nao encontrado"}</span>
-              </p>
-              <p>
-                Hair Colour:
-                <span>{selectedCharacter.hairColour || "Nao encontrado"}</span>
-              </p>
-              <p>
-                Varinha:
-                <span>
-                  {selectedCharacter.wand.wood || "Nao encontrado"},
-                  {selectedCharacter.wand.core || "Nao encontrado"},
-                  {selectedCharacter.wand.length} inches
-                </span>
-              </p>
-
-              <p>
                 Ator:
-                <span>{selectedCharacter.actor || "Nao encontrado"}</span>
+                <span> {selectedCharacter.actor || "Nao encontrado"}</span>
               </p>
             </div>
           </div>
