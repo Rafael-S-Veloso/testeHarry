@@ -8,15 +8,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1000;
 }
 
 .modal {
     background: #171717;
-    width: 704px;
-    height: 453px;
+    width: 90%;
+    max-width: 704px;
+    height: auto;
+    max-height: 90%;
     border-radius: 10px;
     position: relative;
-
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
 }
 
 .closeButton {
@@ -26,16 +31,47 @@
     width: 25px;
     height: 25px;
     background-color: #a6955a;
-
     border: none;
     border-radius: 50%;
-
     font-size: 25px;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
     color: #171717;
-
     padding: 0;
+}
+
+
+@media (max-width: 768px) {
+    .modal {
+        width: 90%;
+        height: auto;
+        max-height: 80%;
+    }
+
+    .closeButton {
+        width: 20px;
+        height: 20px;
+        font-size: 20px;
+        top: 10px;
+        right: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .modal {
+        width: 95%;
+        height: auto;
+        max-height: 80%;
+        padding: 15px;
+    }
+
+    .closeButton {
+        width: 18px;
+        height: 18px;
+        font-size: 18px;
+        top: 8px;
+        right: 8px;
+    }
 }

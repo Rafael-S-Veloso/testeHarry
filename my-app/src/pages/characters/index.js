@@ -1,4 +1,4 @@
-import { useState, useEffect, Fragment } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import logoHarry from "../../../public/logoHarry.png";
@@ -6,12 +6,12 @@ import defaultHarry from "../../../public/logoDefaultHarry.jpg";
 import styles from "../../styles/characters.module.css";
 import LogoMeio from "../../../public/LogoMeio.png";
 import Card from "./cards";
-import Modal from "../../components/Modal/Modal";
+import Modal from "../../components/Modal/Modal.js";
 import { useRouter } from "next/router";
 
 export async function getStaticProps() {
   const api = "https://hp-api.herokuapp.com/api/characters";
-  const res = await fetch(`${api}`);
+  const res = await fetch(api);
   const data = await res.json();
 
   const characters = data.map((character) => ({
@@ -82,9 +82,9 @@ function Characters({ characters }) {
       </div>
       <div className={styles.card}>
         {filteredCharacters.map((character, index) => (
-          <Fragment key={index}>
-            <Card character={character} onClick={() => openModal(character)} />
-          </Fragment>
+          <span key={index} onClick={() => openModal(character)}>
+            <Card character={character} />
+          </span>
         ))}
       </div>
       {isModalVisible && selectedCharacter && (
@@ -135,19 +135,23 @@ function Characters({ characters }) {
                     -Madeira:
                     <span>
                       {" "}
-                      {selectedCharacter.wand.wood || "Nao encontrado"},
+                      {selectedCharacter.wand?.wood || "Nao encontrado"},
                     </span>
                   </p>
                   <p>
                     -Núcleo:
                     <span>
                       {" "}
-                      {selectedCharacter.wand.core || "Nao encontrado"},
+                      {selectedCharacter.wand?.core || "Nao encontrado"},
                     </span>
                   </p>
                   <p>
                     -Comprimento:
-                    <span> {selectedCharacter.wand.length} inches </span>
+                    <span>
+                      {" "}
+                      {selectedCharacter.wand?.length || "Nao encontrado"}{" "}
+                      inches{" "}
+                    </span>
                   </p>
                 </span>
               </p>
