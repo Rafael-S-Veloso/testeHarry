@@ -8,7 +8,7 @@ function Card({ character }) {
   }
 
   return (
-    <div>
+    <div className={styles.container}>
       <div className={styles.Card}>
         <Image
           src={character.image || DefaultHarry}
@@ -17,8 +17,9 @@ function Card({ character }) {
           alt={`Imagem do Personagem ${character.name || "Default Image"}`}
         />
       </div>
-      <h3 className={styles.title}>{character.name}</h3>
-      <p>{character.house}</p>
+      <div className={styles.boxTitle}>
+        <h3 className={styles.title}>{character.name}</h3>
+      </div>
     </div>
   );
 }

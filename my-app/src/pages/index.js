@@ -10,7 +10,9 @@ function LogoSection({ handleButtonClick }) {
     <div className={styles.logo}>
       <Image src={Logo} alt="Logo principal" />
       <div className={styles.box}>
-        <button onClick={handleButtonClick}>Veja todos os personagens</button>
+        <button className={styles.customButton} onClick={handleButtonClick}>
+          Veja todos os personagens
+        </button>
       </div>
     </div>
   );
@@ -28,14 +30,15 @@ export default function Home() {
       <header className={styles.cabecalho} />
       <main className={styles.container}>
         <LogoSection handleButtonClick={handleButtonClick} />
-
-        <div className={styles.main}>
-          <Image src={LogoMeio} alt="Logo meio" />
-          <p>Navegue pelas Casas</p>
-          <div className={styles.border} />
-        </div>
-        <div className={styles.cards}>
-          <CardsHouse />
+        <div className={styles.cardContainer}>
+          <div className={styles.main}>
+            <Image src={LogoMeio} alt="Logo meio" />
+            <p>Navegue pelas Casas</p>
+            <div className={styles.border} />
+          </div>
+          <div className={styles.cards}>
+            <CardsHouse />
+          </div>
         </div>
       </main>
     </div>

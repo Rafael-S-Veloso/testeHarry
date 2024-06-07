@@ -21,7 +21,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 10px;
+    margin-top: 80px;
     color: #a6955a;
     font-size: 30px;
 }
@@ -31,9 +31,9 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 60px;
     cursor: pointer;
-
+    gap: 20px;
 }
 
 .logo {
@@ -61,6 +61,7 @@
 .info p {
     color: #A6955A;
     font-size: 18px;
+
 }
 
 .info span {
@@ -70,4 +71,9 @@
 
 .containerModal img {
     border: 2px solid #a6955a;
+}
+
+.customButton {
+    background-color: #031C29;
+
 }

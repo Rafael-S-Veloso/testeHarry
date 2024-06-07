@@ -1,17 +1,26 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .Card {
     width: 163px;
     height: 227px;
     border: 2px solid #a6955a;
-    display: flex;
-    margin: 0 10px;
-
 }
 
 .Card img {
     width: 100%;
-    height: auto;
+    height: 100%;
     cursor: pointer;
+}
 
+.boxTitle {
+    width: 130px;
+    height: 30px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .title {

@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, Fragment } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import logoHarry from "../../../public/logoHarry.png";
@@ -82,9 +82,9 @@ function Characters({ characters }) {
       </div>
       <div className={styles.card}>
         {filteredCharacters.map((character, index) => (
-          <div key={index} onClick={() => openModal(character)}>
-            <Card character={character} />
-          </div>
+          <Fragment key={index}>
+            <Card character={character} onClick={() => openModal(character)} />
+          </Fragment>
         ))}
       </div>
       {isModalVisible && selectedCharacter && (
