@@ -1,9 +1,24 @@
 .box {
-    width: 272px;
-    height: 288px;
+    width: 100%;
+    max-width: 272px;
+    height: auto;
+    margin: auto;
 }
 
 .box img {
     width: 100%;
     height: auto;
+}
+
+
+@media (max-width: 760px) {
+    .box {
+        max-width: 50%;
+        padding: 10px;
+    }
+
+    .box img {
+        width: 90%;
+
+    }
 }

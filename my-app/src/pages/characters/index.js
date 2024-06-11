@@ -138,6 +138,7 @@ function Characters({ characters }) {
                       {selectedCharacter.wand?.wood || "Nao encontrado"},
                     </span>
                   </p>
+
                   <p>
                     -Núcleo:
                     <span>
@@ -155,6 +156,7 @@ function Characters({ characters }) {
                   </p>
                 </span>
               </p>
+
               <p>
                 Ancestralidade:
                 <span> {selectedCharacter.ancestry || "Nao encontrado"}</span>

@@ -43,11 +43,13 @@
 }
 
 
+
 @media (max-width: 768px) {
     .modal {
         width: 90%;
         height: auto;
         max-height: 80%;
+
     }
 
     .closeButton {
@@ -64,7 +66,8 @@
         width: 95%;
         height: auto;
         max-height: 80%;
-        padding: 15px;
+        padding: 05px;
+        margin-top: 80px;
     }
 
     .closeButton {
