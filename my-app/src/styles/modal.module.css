@@ -44,7 +44,7 @@
 
 
 
-@media (max-width: 768px) {
+@media (max-width:460px) {
     .modal {
         width: 90%;
         height: auto;

@@ -131,29 +131,32 @@ function Characters({ characters }) {
               <p>
                 Varinha:
                 <span>
-                  <p>
-                    -Madeira:
-                    <span>
-                      {" "}
-                      {selectedCharacter.wand?.wood || "Nao encontrado"},
-                    </span>
-                  </p>
+                  <div className={styles.espaco}>
+                    <p>
+                      -Madeira:
+                      <span>
+                        {" "}
+                        {selectedCharacter.wand?.wood || "Nao encontrado"},
+                      </span>
+                    </p>
 
-                  <p>
-                    -Núcleo:
-                    <span>
-                      {" "}
-                      {selectedCharacter.wand?.core || "Nao encontrado"},
-                    </span>
-                  </p>
-                  <p>
-                    -Comprimento:
-                    <span>
-                      {" "}
-                      {selectedCharacter.wand?.length || "Nao encontrado"}{" "}
-                      inches{" "}
-                    </span>
-                  </p>
+                    <p>
+                      -Núcleo:
+                      <span>
+                        {" "}
+                        {selectedCharacter.wand?.core || "Nao encontrado"},
+                      </span>
+                    </p>
+                    <p>
+                      -Comprimento:
+                      <span>
+                        {" "}
+                        {selectedCharacter.wand?.length ||
+                          "Nao encontrado"}{" "}
+                        inches{" "}
+                      </span>
+                    </p>
+                  </div>
                 </span>
               </p>
 
