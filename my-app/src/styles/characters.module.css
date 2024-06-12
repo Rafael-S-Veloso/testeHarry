@@ -9,7 +9,6 @@
 
 .background {
     background-image: url('../../public/fundoAzul.png');
-
 }
 
 .border {
@@ -26,19 +25,17 @@
     margin-top: 80px;
     color: #a6955a;
     font-size: 30px;
-
 }
 
 .card {
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     margin-top: 60px;
     cursor: pointer;
-    gap: 30px;
+    gap: 20px;
     margin-left: 40px;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-
 }
 
 .logo {
@@ -88,7 +85,7 @@
 }
 
 
-@media (max-width: 530px) {
+@media (max-width: 550px) {
     .cabecalho {
         height: 80px;
     }
@@ -96,8 +93,8 @@
     .container {
 
         align-items: center;
-        padding: 0- 30px;
-        font-size: 40px;
+        padding: 0 30px;
+        font-size: 50px;
         margin-top: 20px;
 
     }
@@ -107,11 +104,11 @@
     }
 
     .card {
-
+        flex-direction: column;
         margin-top: 30px;
         gap: 10px;
         margin-left: 50px;
-        grid-template-columns: repeat(1, 1fr);
+
     }
 
     .logo {
