@@ -14,8 +14,10 @@
 }
 
 body {
-    font-family: 'Inter', inter;
+    font-family: 'arial', arial;
     background-color: #021b29;
+    font-weight: 400px;
+    font-size: 18px;
 }
 
 a {
