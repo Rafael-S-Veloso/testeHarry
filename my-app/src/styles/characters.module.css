@@ -22,21 +22,21 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 80px;
     color: #a6955a;
     font-size: 30px;
+    max-width: 1500px;
+    margin: 80px auto 0 auto;
 }
 
 .card {
     display: flex;
     flex-wrap: wrap;
-
     justify-content: center;
-    margin-top: 70px;
     cursor: pointer;
     gap: 50px;
-    margin-left: 50px;
     max-width: 1500px;
+    margin: 70px auto 0 auto;
+    align-items: center;
 }
 
 .logo {

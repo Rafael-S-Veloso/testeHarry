@@ -15,6 +15,8 @@
 
 .container {
   padding: 0 50px;
+  max-width: 1500px;
+  margin: 0 auto;
 }
 
 .box {
@@ -38,12 +40,14 @@
 
 .cardContainer {
   position: relative;
-  top: 100px;
+  top: 150px;
 }
 
 .cards {
   display: flex;
   justify-content: space-between;
+  gap: 50px;
+  margin-top: 20px;
 }
 
 .cards img {
@@ -75,6 +79,7 @@
   color: #A6955A;
   padding: 0 30px;
   margin-top: 150px;
+  gap: 50px;
 }
 
 .main p {
@@ -100,7 +105,7 @@
 
   .container {
     padding: 0 30px;
-
+    max-width: 100%;
   }
 
   .box {
