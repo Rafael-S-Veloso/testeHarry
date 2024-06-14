@@ -13,12 +13,12 @@
 
 .border {
     border: 3px solid #A6955A;
-    width: 900px;
-    max-width: 100%;
+    width: 804px;
+    margin-right: 60px;
 }
 
 .container {
-    padding: 0 50px;
+    padding: 0 90px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -94,11 +94,13 @@
     .container {
 
         align-items: center;
-        padding: 0 30px;
-        font-size: 50px;
-        margin-top: 20px;
+        padding: 0 20px;
+        font-size: 30px;
+        margin-top: 30px;
 
     }
+
+
 
     .border {
         border: none;
